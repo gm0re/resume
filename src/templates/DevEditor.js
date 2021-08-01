@@ -1,10 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Profile from '../components/Profile'
+import Education from '../components/Education'
+import Work from '../components/Work'
+import Skills from '../components/Skills'
 
-const DevEditor = ({ profile }) => {
+const DevEditor = ({ profile, education, work, skills }) => {
   console.log('DevEditor', profile)
 
-  return <>Hola</>
+  return (
+    <div>
+      <Profile profile={profile} />
+      <Education education={education} />
+      <Work work={work} />
+      <Skills skills={skills} />
+    </div>
+  )
 }
 
 DevEditor.propTypes = {
