@@ -18,6 +18,8 @@
     }
   },
   "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    "prettier/prettier": "off",
     "quotes": ["error", "single"]
   }
 }
