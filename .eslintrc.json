@@ -21,6 +21,7 @@
     "arrow-body-style": ["error", "as-needed"],
     "prettier/prettier": "off",
     "quotes": ["error", "single"],
-    "react/require-default-props": "error"
+    "react/require-default-props": "error",
+    "react/no-unknown-property": "off"
   }
 }
