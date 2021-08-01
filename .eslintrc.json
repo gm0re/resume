@@ -20,6 +20,7 @@
   "rules": {
     "arrow-body-style": ["error", "as-needed"],
     "prettier/prettier": "off",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "react/require-default-props": "error"
   }
 }
