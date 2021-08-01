@@ -1,1 +1,1 @@
-export { default as DevEditor } from './DevEditor'
+export { DevEditor } from './DevEditor'
