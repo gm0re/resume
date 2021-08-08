@@ -1,4 +1,6 @@
+export { About } from './About'
 export { Education } from './Education'
 export { Profile } from './Profile'
 export { Skills } from './Skills'
+export { StyledTag } from './StyledTag'
 export { Work } from './Work'

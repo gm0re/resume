@@ -1,19 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { EditorRows } from '../components'
-import { Education, Profile, Work, Skills } from '../sections'
+import { EditorRows, StyledSectionTitle } from './components'
+import { StyledTag, About, Education, Profile, Work, Skills } from '../sections'
 
 const DevEditor = ({ profile, education, work, skills }) => {
   console.log('DevEditor', profile)
 
   return (
-    <div>
+    <div className="bg-primary text-primary w-full h-full flex">
       <EditorRows />
-      <div className="w-full">
+      <div>
+        <StyledTag type="opening">CV</StyledTag>
         <Profile profile={profile} />
-        <Education education={education} />
+        <About
+          about={profile.about}
+          title={<StyledSectionTitle>about me</StyledSectionTitle>}
+        />
+        <Education
+          education={education}
+          title={<StyledSectionTitle>education</StyledSectionTitle>}
+        />
         <Work work={work} />
         <Skills skills={skills} />
+        <StyledTag type="closing">CV</StyledTag>
       </div>
     </div>
   )

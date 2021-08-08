@@ -2,11 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Profile = ({ profile }) => {
-  console.log('Profile')
+  console.log('Profile', profile)
+
   return (
     <section>
-      Profile
-      <title>{profile.name}</title>
+      <h2 className="text-4xl">
+        {profile.name} {profile.lastName}
+      </h2>
+      <h3 className="text-2xl">{profile.profession}</h3>
     </section>
   )
 }
@@ -16,6 +19,7 @@ Profile.propTypes = {
     pic: PropTypes.string,
     name: PropTypes.string.isRequired,
     lastName: PropTypes.string.isRequired,
+    profession: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
     contact: PropTypes.shape({
       phone: PropTypes.string.isRequired,
