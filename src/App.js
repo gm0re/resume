@@ -1,11 +1,7 @@
 import React from 'react'
-import './App.css'
 import { DevEditor } from './templates'
+import { profile } from './mocks/profile.mock'
 
-const App = () => (
-  <div className="App">
-    <DevEditor />
-  </div>
-)
+const App = () => <DevEditor profile={profile} />
 
 export default App
